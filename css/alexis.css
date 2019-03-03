@@ -611,11 +611,11 @@ textarea {
   --pop3: var(--green);
   --pop4: var(--dk-green);
   --pop5: var(--teal);
-  --pop6: var(--dk-teal)
-  ;
+  --pop6: var(--dk-teal);
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -634,22 +634,10 @@ body {
   -ms-grid-columns: max-content;
       grid-template-columns: -webkit-max-content;
       grid-template-columns: max-content;
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Oleo Script Swash Caps', cursive;
-  font-size: 15vw;
   background: -webkit-linear-gradient(0deg, var(--light4), var(--light1), var(--light2), var(--light3), var(--light3), var(--light3), var(--light2), var(--light1), var(--light4));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--light3);
-  padding: 0 1em;
-  -webkit-animation: shine 1.5s linear infinite;
-          animation: shine 1.5s linear infinite;
+  -webkit-animation: shine 1s linear infinite;
+          animation: shine 1s linear infinite;
   background-size: 200% auto;
-  margin: .2em;
 }
 
 @-webkit-keyframes shine {
@@ -662,6 +650,15 @@ h1 {
   to {
     background-position: -200% center;
   }
+}
+
+body h1 {
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 15vw;
+  color: var(--light4);
+  padding: 0 1em;
+  margin: .2em;
 }
 
 span.line {

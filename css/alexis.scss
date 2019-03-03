@@ -1,6 +1,6 @@
-
 @import "normalize";
 @import "main";
+
 :root {
     --pink: #F94F5A;
     --purp: #374A84;
@@ -28,15 +28,17 @@
     --pop3: var(--green);
     --pop4: var(--dk-green);
     --pop5: var(--teal);
-    --pop6: var(--dk-teal)
-  ;
+    --pop6: var(--dk-teal);
 }
-html, body {
+
+html,
+body {
     height: 100%;
     // margin: 0;
 }
+
 body {
-display: grid;
+    display: grid;
 
     // background-image: linear-gradient(0deg, var(--light4), var(--light1), var(--light2), var(--light3));
     color: var(--light4);
@@ -45,32 +47,39 @@ display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: max-content;
+    // background: black
+    background: -webkit-linear-gradient(0deg, var(--light4), var(--light1), var(--light2), var(--light3), var(--light3), var(--light3), var(--light2), var(--light1), var(--light4));
+
+    animation: shine 1s linear infinite;
+    background-size: 200% auto;
+    @keyframes shine {
+        to {
+            background-position: -200% center;
+        }
 }
-  
+
 h1 {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-font-family: 'Oleo Script Swash Caps', cursive;
+    //     font-family: 'Open Sans', sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 15vw;
-    background: -webkit-linear-gradient(0deg, var(--light4), var(--light1), var(--light2), var(--light3), var(--light3),var(--light3),var(--light2),var(--light1),var(--light4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--light3);
-  padding: 0 1em;
-  animation: shine 1.5s linear infinite;
-  background-size: 200% auto;
-  margin: .2em; 
-  @keyframes shine {
-    to {
-      background-position: -200% center;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: var(--light4);
+    padding: 0 1em;
+
+    margin: .2em;
+
+
     }
-  }
 }
+
 span.line {
     display: inline-block;
     display: block;
     line-height: .90em;
 }
+
 .line:last-child {
     font-size: 27vw;
 }
