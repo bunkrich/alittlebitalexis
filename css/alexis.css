@@ -585,48 +585,19 @@ textarea {
   }
 }
 
-:root {
-  --pink: #F94F5A;
-  --purp: #374A84;
-  --navy: #00072D;
-  --blue: #001C55;
-  --li-blue: #A6E1FA;
-  --lav: #a682ff;
-  --dk-lav: #715aff;
-  --fire: #FB3640;
-  --green: #1EFFBC;
-  --dk-green: #3ddc97;
-  --teal: #17bebb;
-  --dk-teal: #004e64;
-  --light1: var(--li-blue);
-  --light2: var(--lav);
-  --light3: var(--dk-lav);
-  --light4: white;
-  --dark1: var(--purp);
-  --dark2: var(--blue);
-  --dark3: var(--navy);
-  --dark4: black;
-  --pop1: var(--fire);
-  --pop2: var(--pink);
-  --pop3: var(--green);
-  --pop4: var(--dk-green);
-  --pop5: var(--teal);
-  --pop6: var(--dk-teal);
-}
-
 html {
-  background: -webkit-linear-gradient(135deg, var(--light4), var(--light1), var(--light2), var(--light3));
+  background: -webkit-linear-gradient(135deg, white, #A6E1FA, #a682ff, #715aff);
   height: 100%;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body {
   height: 100%;
   display: -ms-grid;
   display: grid;
-  color: var(--light4);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -642,13 +613,9 @@ h1 {
   text-align: center;
   font-family: 'Oleo Script Swash Caps', cursive;
   font-size: 15vw;
-  color: var(--light4);
-  padding: 0 1em;
-  margin: .2em;
 }
 
-span.line {
-  display: inline-block;
+.line {
   display: block;
   line-height: .90em;
 }
