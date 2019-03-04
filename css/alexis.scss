@@ -34,44 +34,26 @@
 html,
 body {
     height: 100%;
-    // margin: 0;
 }
 
 body {
     display: grid;
-
-    // background-image: linear-gradient(0deg, var(--light4), var(--light1), var(--light2), var(--light3));
     color: var(--light4);
     background-repeat: no-repeat;
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
     grid-template-columns: max-content;
-    // background: black
-    background: -webkit-linear-gradient(0deg, var(--light4), var(--light1), var(--light2), var(--light3), var(--light3), var(--light3), var(--light2), var(--light1), var(--light4));
-
-    animation: shine 1s linear infinite;
-    background-size: 200% auto;
-    @keyframes shine {
-        to {
-            background-position: -200% center;
-        }
+    background: -webkit-linear-gradient(45deg, var(--light4), var(--light1), var(--light2), var(--light3), var(--light3), var(--light3), var(--light2), var(--light1), var(--light4));
 }
 
 h1 {
     text-align: center;
-    //     font-family: 'Open Sans', sans-serif;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 15vw;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
     color: var(--light4);
     padding: 0 1em;
-
     margin: .2em;
-
-
-    }
 }
 
 span.line {
@@ -82,4 +64,4 @@ span.line {
 
 .line:last-child {
     font-size: 27vw;
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
