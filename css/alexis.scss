@@ -31,12 +31,14 @@
     --pop6: var(--dk-teal);
 }
 
-html,
-body {
+html{
+    background: -webkit-linear-gradient(135deg, var(--light4), var(--light1), var(--light2), var(--light3));
     height: 100%;
+    overflow: hidden;
 }
 
 body {
+    height: 100%;
     display: grid;
     color: var(--light4);
     background-repeat: no-repeat;
@@ -44,7 +46,6 @@ body {
     align-items: center;
     justify-content: center;
     grid-template-columns: max-content;
-    background: -webkit-linear-gradient(45deg, var(--light4), var(--light1), var(--light2), var(--light3), var(--light3), var(--light3), var(--light2), var(--light1), var(--light4));
 }
 
 h1 {

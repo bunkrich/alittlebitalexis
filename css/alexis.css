@@ -614,12 +614,14 @@ textarea {
   --pop6: var(--dk-teal);
 }
 
-html,
-body {
+html {
+  background: -webkit-linear-gradient(135deg, var(--light4), var(--light1), var(--light2), var(--light3));
   height: 100%;
+  overflow: hidden;
 }
 
 body {
+  height: 100%;
   display: -ms-grid;
   display: grid;
   color: var(--light4);
@@ -634,7 +636,6 @@ body {
   -ms-grid-columns: max-content;
       grid-template-columns: -webkit-max-content;
       grid-template-columns: max-content;
-  background: -webkit-linear-gradient(45deg, var(--light4), var(--light1), var(--light2), var(--light3), var(--light3), var(--light3), var(--light2), var(--light1), var(--light4));
 }
 
 h1 {
