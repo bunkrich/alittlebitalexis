@@ -1,5 +1,5 @@
-@import "normalize";
-@import "main";
+// @import "normalize";
+// @import "main";
 
 // :root {
 //     --pink: #F94F5A;
@@ -43,7 +43,6 @@ html{
 body {
     height: 100%;
     display: grid;
-    // color: var(--light4);
     color: white;
     align-items: center;
     justify-content: center;
@@ -54,17 +53,13 @@ h1 {
     text-align: center;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 15vw;
-    // color: var(--light4);
-    // padding: 0 1em;
-    // margin: .2em;
 }
 
 .line {
-    // display: inline-block;
     display: block;
     line-height: .90em;
 }
 
 .line:last-child {
     font-size: 27vw;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
